@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="bloque-1">
+
+            <a class="back-container" [routerLink]="['/']">
+                <img class="back" src="../../../assets/media/back.webp" alt="">
+            </a>
+
+            <h2 class="nombre">{{personaje.nombre.toUpperCase()}}</h2>
+
+            <div class="img-container">
+                <img class="img" [src]="personaje.src" [width]="personaje.width" alt="">
+            </div>
+
+            <div style="max-width: 300px; margin: 0 auto;">
+                <div class="vida-container" *ngIf="personaje.vida">
+                    <img src="assets/media/vida.webp" alt="corazon" class="img-vida">
+                    <div *ngFor="let vida of personaje.vida">
+                        <p>{{vida}}</p>
+                    </div>
+                </div>
+
+                <div class="recompensa-container" *ngIf="personaje.recompensa">
+                    <img src="assets/media/recompensa.webp" alt="corazon" class="img-recompensa">
+                    <div class="recompensas">
+                        <ng-container *ngFor="let recompensa of personaje.recompensa">
+                            <ng-container *ngIf="esString(recompensa)">
+                                <p style="font-size: 14px;">{{recompensa}}</p>
+                            </ng-container>
+                            <ng-container *ngIf="esNumero(recompensa)">
+                                <p><img src="assets/media/geo.webp" alt="" class="img-geo"> {{recompensa}}</p>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                </div>
+
+                <div class="ubicacion-container" *ngIf="personaje.ubicacion">
+                    <img src="assets/media/ubicacion.webp" alt="corazon" class="img-ubicacion">
+                    <div class="ubicaciones">
+                        <ng-container *ngFor="let ubicacion of personaje.ubicacion">
+                            <ng-container *ngIf="ubicacion == 'Hogar de Dioses'">
+                                <p class="hogar-de-dioses"><img src="assets/media/hogar-de-dioses.webp" alt=""
+                                        class="img-hogar-de-dioses">
+                                    {{ubicacion}}</p>
+                            </ng-container>
+                            <ng-container *ngIf="ubicacion != 'Hogar de Dioses'">
+                                <p>{{ubicacion}}</p>
+                            </ng-container>
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bloque-2">
+
+            <div class="borde-container">
+                <img class="borde" src="../../../assets/media/borde.webp" alt="">
+            </div>
+
+            <p class="descripcion descripcion-1">{{personaje.descripcion[0]}}</p>
+
+            <p class="descripcion" *ngIf="personaje.descripcion[1]"><em>"{{personaje.descripcion[1]}}"</em></p>
+
+            <div class="bordebajo-container">
+                <img class="bordebajo" src="../../../assets/media/bordebajo.webp" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

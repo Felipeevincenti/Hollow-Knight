@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Knight</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <img class="header__logo" src="../assets/media/logo.png" alt="logo hollow knight">
+    </header>
+
+    <div id="botones">
+        <button class="boton" (click)="cambiarTipoPersonaje('todos')">Todos</button>
+        <button class="boton" (click)="cambiarTipoPersonaje('pacificos')">Pacificos</button>
+        <button class="boton" (click)="cambiarTipoPersonaje('agresivos')">Agresivos</button>
+        <button class="boton" (click)="cambiarTipoPersonaje('jefes')">Jefes</button>
+    </div>
+
+    <div id="grilla">
+        <a *ngFor="let personaje of personajes" [routerLink]="['/personaje']" class="carta"
+            (click)="personajeSeleccionado(personaje)">
+            <div class="carta__imgcontainer">
+                <img class="imgcontainer__img" [src]="personaje.src" [width]="personaje.width"
+                    alt="{{ personaje.nombre + ' Hollow Knight'}}">
+            </div>
+        </a>
+    </div>
+
+</body>
+
+</html>

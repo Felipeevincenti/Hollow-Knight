@@ -1,0 +1,251 @@
+@font-face {
+    font-family: trajan;
+    src: url(../../../assets/fonts/trajan.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../../../assets/media/Fondo.png);
+}
+
+.back-container {
+    width: 100px;
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+.back {
+    width: 100%;
+    position: relative;
+    transform: rotate(90deg);
+    transition: filter .3s;
+}
+
+.back-container:hover .back {
+    filter: brightness(.8);
+    transition: filter .3s;
+}
+
+.container {
+    min-height: calc(100vh - 50px);
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10%;
+}
+
+.nombre {
+    font-size: 35px;
+    text-shadow: 0px 0px 10px #000;
+    color: #fff;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.img-container {
+    width: 250px;
+    height: 300px;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    text-decoration: none;
+    border: 2px solid #fff;
+    background: #00000067;
+    padding: 20px;
+}
+
+.img-container:hover .img {
+    transition: transform .5s;
+    transform: scale(1.1);
+}
+
+.img {
+    transition: transform .5s;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.vida-container {
+    display: flex;
+    padding: 15px 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: .5px solid #ccc;
+    border-image: linear-gradient(to right, #FFF0, #aaa, #FFF0) 47% 0% 1;
+}
+
+.img-vida {
+    width: 25px;
+}
+
+.recompensa-container {
+    display: flex;
+    padding: 15px 10px;
+    justify-content: space-between;
+    align-items: start;
+    border-bottom: .5px solid #ccc;
+    border-image: linear-gradient(to right, #FFF0, #aaa, #FFF0) 47% 0% 1;
+}
+
+.img-recompensa {
+    width: 20px;
+    margin-left: 2px;
+}
+
+.recompensas {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 5px;
+}
+
+.recompensas p {
+    display: flex;
+    justify-content: end;
+    text-align: right;
+}
+
+.img-geo {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.recompensa-container p {
+    display: flex;
+    align-items: center;
+}
+
+.ubicacion-container {
+    display: flex;
+    padding: 15px 10px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.ubicaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: right;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.img-ubicacion {
+    width: 20px;
+    margin-left: 2px;
+}
+
+.img-hogar-de-dioses {
+    width: 10px;
+    margin-right: 5px;
+}
+
+.hogar-de-dioses {
+    display: flex;
+    align-items: center;
+}
+
+.borde-container {
+    margin: 2rem auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bordebajo-container {
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.bordebajo {
+    width: 300px;
+}
+
+.descripcion {
+    color: #fff;
+    width: 250px;
+    line-height: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.descripcion-1 {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    border-image: linear-gradient(to right, #FFF0, #fff, #FFF0) 47% 0% 1;
+}
+
+@media (width > 425px) {
+
+    .back-container {
+        width: 120px;
+        height: 80px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .descripcion {
+        width: 302px;
+    }
+
+}
+
+@media (width > 657px) {
+
+    .img-container {
+        width: 300px;
+        height: 400px;
+    }
+
+}
+
+@media (width > 1024px) {
+
+    .back-container {
+        width: 140px;
+        height: 100px;
+        top: 20px;
+        left: 20px;
+    }
+
+    .nombre {
+        font-size: 38px;
+        text-shadow: 0px 0px 10px #000;
+        color: #fff;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    .borde-container {
+        margin-bottom: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
