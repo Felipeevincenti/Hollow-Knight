@@ -3173,6 +3173,33 @@ export class InicioComponent implements AfterViewInit, OnInit {
       recompensa: ['Alas de Monarca'],
       ubicacion: ['Sendero Verde'],
       descripcion: ['Habilidosa protectora de las ruinas de Hallownest. Empuña una aguja e hilo.', 'He visto a esta pequeña y ágil criatura. Pensé que era una presa y me abalancé sobre ella, pero, rápida como un rayo, me apuñaló con su aguijón volante y se fue disparada. ¿Podría ser... una cazadora?']
+    },
+    {
+      nombre: "Hollow Knight",
+      src: "../assets/media/personajes/hollow-knight.webp",
+      width: 240,
+      vida: [1000],
+      recompensa: ['-'],
+      ubicacion: ['Templo del Huevo Negro'],
+      descripcion: ['Receptáculo adulto que encierra al corazón de la plaga en su cuerpo.', 'El antiguo Rey de Hallownest... llegó a tomar medidas desesperadas para salvar su pequeño mundo. Obligó a muchos a realizar tremendos sacrificios... y todo para nada.']
+    },
+    {
+      nombre: "Vasija Pura",
+      src: "../assets/media/personajes/vasija-pura.webp",
+      width: 160,
+      vida: [1600],
+      recompensa: ['-'],
+      ubicacion: ['Hogar de Dioses'],
+      descripcion: ['Vasija elegida, criada y entrenada para su forma primigenia.', '"¡El más profundo silencio en coraza sagrada, recibió el aguijón y fue nombrado caballero, vasija hechizada en un huevo, sellada. Escucha nuestra plegaria! ¡Tu Luz queremos ver revelada!"']
+    },
+    {
+      nombre: "Destello",
+      src: "../assets/media/personajes/destello.webp",
+      width: 250,
+      vida: [1700],
+      recompensa: ['-'],
+      ubicacion: ['-'],
+      descripcion: ['La luz, olvidada hace mucho.', 'La plaga, la infección, la locura que reanima los cadáveres de Hallownest... el brillo que surge de los ojos de un reino muerto. ¿De dónde procede? Supongo que es algo que está más allá del entendimiento de mortales como yo.']
     }
   ];
 
