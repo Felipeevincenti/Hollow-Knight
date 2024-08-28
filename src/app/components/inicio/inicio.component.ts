@@ -3209,7 +3209,7 @@ export class InicioComponent implements AfterViewInit, OnInit {
 
   // todo -------------------------------------------------- CÓDIGO -------------------------------------------------- todo //
 
-  public personajes: any = {};
+  public personajes: any[] = [];
 
   constructor() { };
 
@@ -3231,24 +3231,27 @@ export class InicioComponent implements AfterViewInit, OnInit {
   };
 
   ngOnInit(): void {
-    this.listar(this.todos);
-  };
+    const filtro = sessionStorage.getItem('filtro') || 'todos'; 
+    this.cambiarTipoPersonaje(filtro); 
+  }
+  cambiarTipoPersonaje(filtro: string) {
+    let filtroPersonajes: any[] = [];
 
-  cambiarTipoPersonaje(filtro: any) {
-    let filtroPersonajes;
-    if (filtro == 'todos') {
+    if (filtro === 'todos') {
       filtroPersonajes = this.todos;
-    } else if (filtro == 'pacificos') {
+    } else if (filtro === 'pacificos') {
       filtroPersonajes = this.pacificos;
-    } else if (filtro == 'agresivos') {
+    } else if (filtro === 'agresivos') {
       filtroPersonajes = this.agresivos;
-    } else if (filtro == 'jefes') {
+    } else if (filtro === 'jefes') {
       filtroPersonajes = this.jefes;
-    };
+    }
+
     this.listar(filtroPersonajes);
+    sessionStorage.setItem('filtro', filtro);
   };
 
-  listar(filtroPersonajes: any) {
+  listar(filtroPersonajes: any[]) {
     this.personajes = filtroPersonajes;
   };
 
