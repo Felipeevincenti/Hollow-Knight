@@ -1,6 +1,8 @@
 # Enciclopedia Hollow Knight
 
-Este proyecto es una enciclopedia interactiva dedicada a los personajes del juego Hollow Knight. Utiliza `sessionStorage` para almacenar y mostrar la información detallada de cada personaje mientras el usuario navega por la aplicación.
+Este proyecto es una enciclopedia interactiva dedicada a los personajes del juego Hollow Knight. Utiliza `sessionStorage` para almacenar y mostrar la información detallada de cada personaje. La aplicación está diseñada para ser **responsive**, adaptándose a diferentes tamaños de pantalla para una mejor experiencia en dispositivos móviles y de escritorio. 
+
+La enciclopedia incluye información sobre más de **150 personajes** del juego.
 
 <div id="user-content-toc"> 
   <ul align="center">
@@ -23,9 +25,11 @@ Este proyecto es una enciclopedia interactiva dedicada a los personajes del jueg
 
 - **Visualizar Detalles de Personajes**: Muestra información detallada de cada personaje individual de Hollow Knight.
 - **Información Dinámica**: Utiliza `sessionStorage` para almacenar temporalmente datos sobre el personaje seleccionado.
-- **Interfaz Amigable**: Navega entre los personajes con facilidad y visualiza sus detalles en una interfaz intuitiva.
+- **Interfaz Amigable y Responsive**: Diseñada para ser adaptable a diferentes tamaños de pantalla, asegurando una buena experiencia de usuario en dispositivos móviles y de escritorio.
 - **Filtrado de Personajes**: Permite filtrar personajes por categorías como "Todos", "Agresivos", "Pacíficos" y "Neutros".
 
 ## Imágenes de Referencia
 
-- **Imagen 1**
+<img src="https://github.com/user-attachments/assets/b1f7cca6-ae60-4a47-892d-0f7c74618d33">
+<hr>
+<img src="https://github.com/user-attachments/assets/62f6dd7a-17ec-460e-b380-7fd5336e4b5f">
