@@ -13,7 +13,7 @@ La enciclopedia incluye información sobre más de **150 personajes** del juego.
 <!--tech stack icons--> 
 <p align="center"> 
   <a href="https://skillicons.dev"> 
-    <img src="https://skillicons.dev/icons?i=html,css,js,ts,angular" /> 
+    <img src="https://skillicons.dev/icons?i=html,css,ts,angular" /> 
   </a> 
 </p> 
 <p align="center"> 
