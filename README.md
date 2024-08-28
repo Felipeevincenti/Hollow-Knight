@@ -1,27 +1,31 @@
-# HollowKnight
+# Enciclopedia Hollow Knight
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.5.
+Este proyecto es una enciclopedia interactiva dedicada a los personajes del juego Hollow Knight. Utiliza `sessionStorage` para almacenar y mostrar la información detallada de cada personaje mientras el usuario navega por la aplicación.
 
-## Development server
+<div id="user-content-toc"> 
+  <ul align="center">
+    <summary><h2 style="display: inline-block">Tecnologías ⚙</h2></summary> 
+  </ul> 
+</div> 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<!--tech stack icons--> 
+<p align="center"> 
+  <a href="https://skillicons.dev"> 
+    <img src="https://skillicons.dev/icons?i=html,css,js,ts,angular" /> 
+  </a> 
+</p> 
+<p align="center"> 
+  <small> HTML5, CSS3: Diseño y maquetación web.<br> TypeScript: Programación y lógica de la aplicación.<br> Angular: Framework principal para el desarrollo de la aplicación. </small> 
+</p> 
+<br>
 
-## Code scaffolding
+## Características
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Visualizar Detalles de Personajes**: Muestra información detallada de cada personaje individual de Hollow Knight.
+- **Información Dinámica**: Utiliza `sessionStorage` para almacenar temporalmente datos sobre el personaje seleccionado.
+- **Interfaz Amigable**: Navega entre los personajes con facilidad y visualiza sus detalles en una interfaz intuitiva.
+- **Filtrado de Personajes**: Permite filtrar personajes por categorías como "Todos", "Agresivos", "Pacíficos" y "Neutros".
 
-## Build
+## Imágenes de Referencia
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **Imagen 1**
